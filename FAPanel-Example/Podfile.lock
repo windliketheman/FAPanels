@@ -1,0 +1,23 @@
+PODS:
+  - FAPanels (0.5.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - FAPanels (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  FAPanels:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FAPanels: 329ac2dcab409bcd051ffac9497a41b1ddce2226
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 326ba2cec88b22d097032783deda30e249baab9a
+
+COCOAPODS: 1.5.3
