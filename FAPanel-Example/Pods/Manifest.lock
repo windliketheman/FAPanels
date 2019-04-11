@@ -1,5 +1,5 @@
 PODS:
-  - FAPanels (0.5.0)
+  - FAPanels (1.0.2)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FAPanels: 329ac2dcab409bcd051ffac9497a41b1ddce2226
+  FAPanels: f2c79774e25bb1bfe635ebdf66ee77aa9a674ec3
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: 326ba2cec88b22d097032783deda30e249baab9a
