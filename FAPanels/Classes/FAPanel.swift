@@ -63,47 +63,47 @@ open class FAPanelController: UIViewController {
     //  MARK:- Open
     
     
-    open var configs = FAPanelConfigurations()
+    @objc open var configs = FAPanelConfigurations()
 
     
-    open func center( _ controller: UIViewController, afterThat completion: (() -> Void)?) {
+    @objc open func center( _ controller: UIViewController, afterThat completion: (() -> Void)?) {
         setCenterPanelVC(controller, afterThat: completion)
     }
 
-    open func center( _ controller: UIViewController) -> FAPanelController {
+    @objc open func center( _ controller: UIViewController) -> FAPanelController {
         
         centerPanelVC = controller
         return self
     }
 
 
-    open func left( _ controller: UIViewController?) -> FAPanelController {
+    @objc open func left( _ controller: UIViewController?) -> FAPanelController {
         
         leftPanelVC = controller
         return self
     }
 
     
-    open func right( _ controller: UIViewController?) -> FAPanelController {
+    @objc open func right( _ controller: UIViewController?) -> FAPanelController {
         
         rightPanelVC = controller
         return self
     }
 
 
-    open func openLeft(animated:Bool) {
+    @objc open func openLeft(animated:Bool) {
 
         openLeft(animated: animated, shouldBounce: configs.bounceOnLeftPanelOpen)
     }
     
     
-    open func openRight(animated:Bool) {
+    @objc open func openRight(animated:Bool) {
         
         openRight(animated: animated, shouldBounce: configs.bounceOnRightPanelOpen)
     }
     
     
-    open func openCenter(animated:Bool) {     //  Can be used for the same menu option selected
+    @objc open func openCenter(animated:Bool) {     //  Can be used for the same menu option selected
         
         if centerPanelHidden {
             centerPanelHidden = false
@@ -113,13 +113,13 @@ open class FAPanelController: UIViewController {
     }
 
 
-    open func closeLeft() {
+    @objc open func closeLeft() {
         
         if isLeftPanelOnFront { slideLeftPanelOut(animated: true, afterThat: nil) }
         else { openCenter(animated: true) }
     }
 
-    open func closeRight() {
+    @objc open func closeRight() {
         
         if isRightPanelOnFront { slideRightPanelOut(animated: true, afterThat: nil) }
         else { openCenter(animated: true) }
@@ -317,7 +317,7 @@ open class FAPanelController: UIViewController {
     
     
     internal var _leftPanelVC: UIViewController? = nil
-    internal var leftPanelVC : UIViewController? {
+    @objc open var leftPanelVC : UIViewController? {
         
         get{
             return _leftPanelVC
@@ -344,7 +344,7 @@ open class FAPanelController: UIViewController {
             }
         }
     }
-    open var left: UIViewController? {
+    @objc open var left: UIViewController? {
         get {
             return leftPanelVC
         }
@@ -379,7 +379,7 @@ open class FAPanelController: UIViewController {
             }
         }
     }
-    open var right: UIViewController? {
+    @objc open var right: UIViewController? {
         get {
             return rightPanelVC
         }
@@ -397,7 +397,7 @@ open class FAPanelController: UIViewController {
             setCenterPanelVC(newValue, afterThat: nil)
         }
     }
-    open var center: UIViewController? {
+    @objc open var center: UIViewController? {
         get {
             return centerPanelVC
         }

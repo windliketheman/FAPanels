@@ -37,132 +37,132 @@ open class FAPanelConfigurations: NSObject {
     
     // overrides leftPanelGapPercentage
     
-    open var leftPanelWidth : CGFloat = 280
-    open var rightPanelWidth: CGFloat = 280
+    @objc open var leftPanelWidth : CGFloat = 280
+    @objc open var rightPanelWidth: CGFloat = 280
     
-    open var leftPanelGapPercentage : CGFloat = 0.8
-    open var rightPanelGapPercentage: CGFloat = 0.8
+    @objc open var leftPanelGapPercentage : CGFloat = 0.8
+    @objc open var rightPanelGapPercentage: CGFloat = 0.8
     
     
     
     
     // resizes all subviews as well
     
-    open var resizeLeftPanel : Bool = false
-    open var resizeRightPanel: Bool = true
+    @objc open var resizeLeftPanel : Bool = false
+    @objc open var resizeRightPanel: Bool = true
     
     
     
     // Adds push animation on side panels
     
-    open var pusheSidePanels: Bool = false
+    @objc open var pusheSidePanels: Bool = false
     
     
     
     
     // Bounce effects on panel animations
     
-    open var bounceOnLeftPanelOpen  : Bool = true
-    open var bounceOnRightPanelOpen : Bool = true
-    open var bounceOnCenterPanelOpen: Bool = true
+    @objc open var bounceOnLeftPanelOpen  : Bool = true
+    @objc open var bounceOnRightPanelOpen : Bool = true
+    @objc open var bounceOnCenterPanelOpen: Bool = true
     
     
-    open var bounceOnLeftPanelClose   : Bool = false
-    open var bounceOnRightPanelClose  : Bool = false
-    open var bounceOnCenterPanelChange: Bool = true
+    @objc open var bounceOnLeftPanelClose   : Bool = false
+    @objc open var bounceOnRightPanelClose  : Bool = false
+    @objc open var bounceOnCenterPanelChange: Bool = true
     
-    open var bouncePercentage : CGFloat = 0.075
-    open var bounceDuration   : CGFloat = 0.1
+    @objc open var bouncePercentage : CGFloat = 0.075
+    @objc open var bounceDuration   : CGFloat = 0.1
     
     
     
     
     //  Panning Gesture
     
-    open var canRecognizePanGesture: Bool = true
+    @objc open var canRecognizePanGesture: Bool = true
     
-    open var panFromEdge          : Bool = false
-    open var minEdgeForLeftPanel  : CGFloat = 70.0
-    open var minEdgeForRightPanel : CGFloat = 70.0
+    @objc open var panFromEdge          : Bool = false
+    @objc open var minEdgeForLeftPanel  : CGFloat = 70.0
+    @objc open var minEdgeForRightPanel : CGFloat = 70.0
     
-    open var canLeftSwipe : Bool = true
-    open var canRightSwipe: Bool = true
+    @objc open var canLeftSwipe : Bool = true
+    @objc open var canRightSwipe: Bool = true
     
     
     
     
     // restricts panning gesture to work for top VC of Navigation/TabBar Controller
     
-    open var restrictPanningToTopVC: Bool = true
+    @objc open var restrictPanningToTopVC: Bool = true
     
     
     
     
     // Handles the interface auto rotation of visible panel
     
-    open var handleAutoRotation: Bool = true
+    @objc open var handleAutoRotation: Bool = true
     
     
     
     
     // Applies corner radius to panels
     
-    open var cornerRadius: CGFloat = 0.0
+    @objc open var cornerRadius: CGFloat = 0.0
     
     
     
     
     // Shadow configurations
     
-    open var shadowColor   : CGColor = UIColor.black.cgColor
-    open var shadowOffset  : CGSize  = CGSize(width: 5.0, height: 0.0)
-    open var shadowOppacity: Float = 0.7
+    @objc open var shadowColor   : CGColor = UIColor.black.cgColor
+    @objc open var shadowOffset  : CGSize  = CGSize(width: 5.0, height: 0.0)
+    @objc open var shadowOppacity: Float = 0.7
 
     
     
     
     // Remove panels from super view when possible
     
-    open var unloadRightPanel: Bool = false
-    open var unloadLeftPanel : Bool = false
+    @objc open var unloadRightPanel: Bool = false
+    @objc open var unloadLeftPanel : Bool = false
     
     
     
     
     // Max animation duration for animations of side panels
     
-    open var maxAnimDuration  : CGFloat = 0.15
+    @objc open var maxAnimDuration  : CGFloat = 0.15
     
     
     
     
     // percentage of screen's width to the centerPanel.view must move for panGesture to succeed
     
-    open var minMovePercentage: CGFloat = 0.15
+    @objc open var minMovePercentage: CGFloat = 0.15
     
     
     
     
     // Only Center Panel Change animation
     
-    open var changeCenterPanelAnimated : Bool = true
+    @objc open var changeCenterPanelAnimated : Bool = true
     open var centerPanelTransitionType : FAPanelTransitionType = .boxFade
-    open var centerPanelTransitionDuration: TimeInterval = 0.40
+    @objc open var centerPanelTransitionDuration: TimeInterval = 0.40
     
     
     
     
     // Display a dakr overlay over the center panel when leftpanelposition = .front
     
-    open var showDarkOverlayUnderLeftPanelOnTop : Bool = true
-    open var darkOverlayUnderLeftPanelOnTopColor : UIColor = UIColor.black.withAlphaComponent(0.5)
+    @objc open var showDarkOverlayUnderLeftPanelOnTop : Bool = true
+    @objc open var darkOverlayUnderLeftPanelOnTopColor : UIColor = UIColor.black.withAlphaComponent(0.5)
 
     
     
     // Display a dakr overlay over the center panel when rightpanelposition = .front
     
-    open var showDarkOverlayUnderRightPanelOnTop : Bool = true
-    open var darkOverlayUnderRightPanelOnTopColor : UIColor = UIColor.black.withAlphaComponent(0.5)
+    @objc open var showDarkOverlayUnderRightPanelOnTop : Bool = true
+    @objc open var darkOverlayUnderRightPanelOnTopColor : UIColor = UIColor.black.withAlphaComponent(0.5)
 
 }
 
