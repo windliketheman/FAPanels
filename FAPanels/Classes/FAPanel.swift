@@ -264,7 +264,7 @@ open class FAPanelController: UIViewController {
         }
     }
     
-    internal var isLeftPanelOnFront : Bool {
+    open var isLeftPanelOnFront : Bool {
         return leftPanelPosition == .front
     }
     
