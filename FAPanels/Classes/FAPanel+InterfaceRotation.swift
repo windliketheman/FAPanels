@@ -30,7 +30,19 @@ extension FAPanelController {
         }
     }
     
-    
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+            guard let visiblePanel = visiblePanelVC else { return .allButUpsideDown }
+            
+            if configs.handleAutoRotation && visiblePanel.responds(to: #selector(getter: self.supportedInterfaceOrientations)) {
+                return visiblePanel.supportedInterfaceOrientations
+            }
+            else {
+                return .allButUpsideDown
+            }
+        }
+    }
+
     override open func willAnimateRotation(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
         
         centerPanelContainer.frame = updateCenterPanelSlidingFrame()
