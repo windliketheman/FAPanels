@@ -164,8 +164,8 @@ open class FAPanelConfigurations: NSObject {
     
     // Tap View Properties
 
-    open var colorForTapView: UIColor = UIColor.black.withAlphaComponent(0.35)
-    open var shouldAnimateWithPan: Bool = true
+    @objc open var colorForTapView: UIColor = UIColor.black.withAlphaComponent(0.3)
+    @objc open var shouldAnimateWithPan: Bool = true
 }
 
 

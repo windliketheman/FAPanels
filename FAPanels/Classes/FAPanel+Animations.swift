@@ -404,6 +404,8 @@ extension FAPanelController {
         else {
             view.sendSubviewToBack(leftPanelContainer)
         }
+        
+        leftPanelVC?.viewWillAppear(true)
     }
     
     
@@ -429,6 +431,8 @@ extension FAPanelController {
         else {
             view.sendSubviewToBack(rightPanelContainer)
         }
+        
+        rightPanelVC?.viewWillAppear(true)
     }
     
     
@@ -467,6 +471,7 @@ extension FAPanelController {
         
         if rightPanelVC != nil {
             centerPanelVC?.view.endEditing(true)
+            
             state = .right
             loadRightPanel()
             
